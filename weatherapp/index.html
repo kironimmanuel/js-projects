@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Weather App</title>
+    <link rel="shortcut icon" href="./images/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="weather-app">
+      <div class="container loading">
+        <h3 class="brand">current weather</h3>
+        <div>
+          <h1 class="temp">20°C</h1>
+          <div class="city-time">
+            <h1 class="name">Frankfurt</h1>
+            <small>
+              <span class="time">07:15</span>
+              <span class="date">monday jun 1</span>
+            </small>
+          </div>
+
+          <div class="weather">
+            <img
+              src="https://openweathermap.org/img/wn/03n.png"
+              class="icon"
+              alt="icon"
+              width="50"
+              height="50"
+            />
+            <span class="condition">cloudy</span>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <form id="loactionInput">
+          <input type="text" class="search" placeholder="Search City.." />
+          <button type="submit" class="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+
+        <ul class="cities">
+          <li class="city">Frankfurt</li>
+          <li class="city">Berlin</li>
+          <li class="city">München</li>
+          <li class="city">Hamburg</li>
+        </ul>
+
+        <ul class="details">
+          <h4>Weather details</h4>
+          <li>
+            <span>cloudy</span>
+            <span class="cloud">90%</span>
+          </li>
+
+          <li>
+            <span>humidity</span>
+            <span class="humidity">50%</span>
+          </li>
+
+          <li>
+            <span>wind</span>
+            <span class="wind">10km/h</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
